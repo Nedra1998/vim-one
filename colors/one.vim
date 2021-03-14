@@ -845,6 +845,14 @@ if has('gui_running') || has('termguicolors') || &t_Co == 88 || &t_Co == 256
   call <sid>X('manFooter', s:mono_3, '', '')
   " }}}
 
+  " LSP highlighting --------------------------------------------------------{{{
+  hi link manTitle String
+  call <sid>X('LspDiagnosticsSignError', s:hue_5, '', '')
+  call <sid>X('LspDiagnosticsSignWarning', s:hue_6, '', '')
+  call <sid>X('LspDiagnosticsSignInformation', s:hue_2, '', '')
+  call <sid>X('LspDiagnosticsSignHint', s:hue_3, '', '')
+  " }}}
+
   " ALE (Asynchronous Lint Engine) highlighting -----------------------------{{{
   call <sid>X('ALEWarningSign', s:hue_6_2, '', '')
   call <sid>X('ALEErrorSign', s:hue_5,   '', '')
